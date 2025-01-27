@@ -1,0 +1,109 @@
+header {
+    width: 100%;
+    height: 50px;
+    background: #3c8e93c0;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: left;
+    font-size: 28px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(78, 155, 172, 0.85);
+    border-top: 1px solid white;
+    transition: all 0.5s;
+    transform: translateY(-120%);
+}
+/* menu a significa elementos de vinculación del .menu 
+   es decir inicio, mascotas, etc */
+.submenu{
+
+    display: none;
+    position: fixed;
+    width: 50%;
+    background-color: rgba(78, 155, 172, 0.85);
+    border: 1px solid white;
+    z-index: 1;
+}
+.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black; /* sombra de texto: desp-hor, desp-
+    vert blur color */
+    padding: 25px;
+    border-right: 2px solid rgda(255, 255, 255, 0.3);
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.menu a:hover + .submenu,
+.submenu:hover {
+    display: block;
+}
+.menu-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.menu-centered a{
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+#menu-bar:checked ~.menu{
+    transform: translateY(0);
+}
+h1 a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px black;
+} 
+
+@media(min-width: 1800px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: none;
+        display: block;
+        background: transparent;
+        border: none;
+    }
+    header label {display: none;}
+    .menu a{
+        border: none;
+        float: none;
+        display: block;
+    }
+    .menu-centered a{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}

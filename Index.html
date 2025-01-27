@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--header significa cabecera de un html, es donde se especifican las 
+    caracteristicas de la página-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=3.0, minimum-scale=0.5">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="CSS/fontello.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" href="Imagenes/Titulo.png" sizes="32x32" type="image.png">
+</head>
+
+<body>
+    
+    <Header>
+        <div class="contenedor">
+            <h1><a href="Index.html">Mascotas</a></h1> <!--class icon 
+                guidedog es el icono del perro y así lo que coresponda-->
+            <label class="icon-menu-outline" for="menu-bar"></label>
+            <input type="checkbox" id="menu-bar">
+            <nav class="menu">
+                <a href="Index.html">Inicio</a>
+                <a href="#info">Mascotas</a>
+                <div class="submenu">
+                    <a href="Perros.html">Perros</a>
+                    <a href="Conejos.html">Conejos</a>
+                    <a href="Periquitos.html">Periquitos</a>
+                    <a href="Gatos.html">Gatos</a>
+                    <a href="Peces.html">Peces</a>
+                    <a href="Reptiles.html">Reptiles</a>
+                    <a href="Roedores.html">Roedores</a>
+                </div>
+                <a href="Blog.html">Blog</a>
+                <a href="Contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+    </Header>
+    <section id="banner"> <!--id va con igual siempre-->
+        <img src="Imagenes/Principal.avif" alt="Banner de Mascotas">
+        <div class="contenedor">
+            <h2>Mascotas en nuestra vida</h2>
+            <p>Compañeros incondicionales</p>
+            <a href="#info">Leer más</a>
+        </div>
+    </section>
+    
+    <section id="bienvenidos">
+        <div class="contenedor">
+            <video id="defondo" src="Videos/mascotas.mp4" autoplay muted playsinline loop></video>
+            <h2>Bienvenidos al sitio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi, exercitationem officiis, corporis alias delectus officia error recusandae iure vel ipsa, nemo nostrum por totam atque. Impedit beatae eligendi cupiditat
+            </p>
+        </div>
+    </section>
+    <section id="conceptos">
+        <h3>Conceptos importantes</h3>
+        <div class="contenedor">
+            <article>
+                <img src="Imagenes/perroyamo.jpg" alt="Mascotas cariñosas">
+                <h4>Elige a tu compañero de vida</h4>
+            </article>
+            <article>
+                <img src="Imagenes/Gatopersona.jpg" alt="Gatos y personas">
+                <h4>Dar y recibir cariño</h4>
+            </article>
+            <article>
+                <img src="Imagenes/paseando.jpg" alt="Disfrutando al aire libre">
+                <h4>Disfrutar juntos de las salidas</h4>
+            </article>
+        </div>
+    </section>
+    <section id="info">
+        <h3>Las mascotas no son simples compañeros son miembros de las familias</h3>
+        <div class="contenedor">
+            <div class="info-pet">
+                <a href="Perros.html" target="_self">
+                    <img src="Imagenes/boxer.jpg" alt="Perros">
+                </a>
+                <h4>Perros</h4>
+            </div>
+            <div class="info-pet">
+                <a href="Conejos.html" target="_self">
+                    <img src="Imagenes/Conejo.jpg" alt="Conejos">
+                </a>
+                <h4>Conejos</h4>
+            </div>
+            <div class="info-pet">
+                <a href="Periquitos.html" target="_self">
+                    <img src="Imagenes/periquitos.jpeg" alt="periquitos">
+                </a>
+                <h4>Periquitos</h4>
+            </div>
+            <div class="info-pet">
+                <a href="Gatos.html" target="_self"> 
+                    <img src="Imagenes/gatos.avif" alt="gatos">
+                </a>
+                <h4>Gatos</h4>
+             </div>
+             <div class="info-pet">
+                <a href="Peces.html" target="_self">
+                    <img src="Imagenes/peces.jpg" alt="Peces">
+                </a>
+                <h4>Peces</h4>
+                
+             </div>
+             <div class="info-pet">
+                <a href="Reptiles.html" target="_self">
+                    <img src="Imagenes/Reptil.jpg" alt="Reptiles">
+                </a>
+                <h4>Reptiles</h4>
+             </div>
+             <div class="info-pet">
+                <a href="Roedores.html" target="_self">
+                    <img src="Imagenes/roedores.jpeg" alt="Roedores">
+                </a>
+                <h4>Roedores</h4>
+             </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Mascotas &copy; 2023</p> <!--codigos HTML-->
+            <div class="sociales">
+                <a href="https://www.facebook.com" class="icon-facebook-rect" target="_blank"></a>
+                <a href="https://www.instagram.com" class="icon-instagram" target="_blank"></a>
+                <a href="https://www.twitter.com" class="icon-twitter" target="_blank"></a>
+                <a href="Contacto.html" class="icon-mail" target="_self"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

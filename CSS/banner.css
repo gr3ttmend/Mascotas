@@ -1,0 +1,305 @@
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+#banner img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid lightslategray;
+}
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgba(221, 115, 214, 0.937);
+    text-shadow: 1px 1px black;
+}
+#banner h2 {
+    font-size: 1.6em;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: #03151f;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 8px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 1px 1px rgb(15, 0, 0);
+}
+#banner a:hover{ /* hand over */
+    background: rgba(255, 255, 255, 0.2);
+}
+#perros{
+    margin-top: 50px;
+    position: relative;
+}
+#perros img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid lightslategray;
+}
+#perros .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#perros h2 {
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#conejos{
+    margin-top: 50px;
+    position: relative;
+}
+#conejos img {
+    width: 100%;
+    height: -50%;
+    border-bottom: 5px solid lightslategray;
+}
+#conejos .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#conejos h2{
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#periquitos{
+    margin-top: 50px;
+    position: relative;
+}
+#periquitos img {
+    width: 100%;
+    height: -50%;
+    border-bottom: 5px solid lightslategray;
+}
+#periquitos .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#periquitos h2{
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#gatos {
+    margin-top: 50px;
+    position: relative;
+}
+#gatos img {
+    width: 100%;
+    height: -50%;
+    border-bottom: 5px solid lightslategray;
+}
+#gatos .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#gatos h2 {
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#peces {
+    margin-top: 50px;
+    position: relative;
+}
+#peces img {
+    width: 100%;
+    height: -50%;
+    border-bottom: 5px solid lightslategray;
+}
+#peces .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#peces h2 {
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#reptiles {
+    margin-top: 50px;
+    position: relative;
+}
+#reptiles img {
+    width: 100%;
+    height: -50%;
+    border-bottom: 5px solid lightslategray;
+}
+#reptiles .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#reptiles h2 {
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#roedores {
+    margin-top: 50px;
+    position: relative;
+}
+#roedores img {
+    width: 100%;
+    height: -50%;
+    border-bottom: 5px solid lightslategray;
+}
+#roedores .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px rgb(54, 53, 53);
+}
+#roedores h2 {
+    font-size: 1.6em;
+    color: rgb(180, 135, 84);
+}
+#contenido{
+    margin-top: 50px;
+    position: relative;
+    float: left;
+    width: calc(80% - 80px);
+    background-color: blanchedalmond;
+    padding: 40px;
+}
+#contenido .contenedor{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: 1px 1px rgb(54, 53, 53);
+}
+
+aside{
+    margin-top: 50px;
+    float: left;
+    width: 25%;
+    min-height: 500px;
+    background-color: #3c8e93c0;
+    padding: 40px;
+}
+@media(min-width: 500px) {   /* media queries y tamaño de la ventana */
+    #banner h2{
+        font-size: 2em;
+    }
+}
+@media(min-width: 750px){
+    #banner{
+        height: 370px;
+        overflow: hidden;  /*para acortar la imagen luego de la cantidad de px sugerida*/
+    }
+    #banner img{
+        height: auto; /*para que la imagen reducida no se compacte sino que se recorte*/
+    }
+    #perros{
+        height: 370px;
+        overflow: hidden;
+    }
+    #perros img{
+        height: auto;
+    }
+    #conejos{
+        height: 370px;
+        overflow: hidden;
+    }
+    #conejos img {
+        height: auto;
+    }
+    #periquitos {
+        height: 370px;
+        overflow: hidden;
+    }
+    #periquitos img {
+        height: auto;
+    }
+    #gatos {
+        height: 370px;
+        overflow: hidden;
+    }
+    #gatos img {
+        height: auto;
+    }
+    #peces {
+        height: 370px;
+        overflow: hidden;
+    }
+    #peces img {
+        height: auto;
+    }
+    #reptiles {
+        height: 370px;
+        overflow: hidden;
+    }
+    #reptiles img {
+        height: auto;
+    }
+    #roedores {
+        height: 370px;
+        overflow: hidden;
+    }
+    #roedores img {
+        height: auto;
+    }
+    #contenido {
+        height: 200px;
+        overflow: hidden;
+    }
+    aside {
+        height: 500px;
+        overflow: hidden;  
+    }
+}
+
+@media(min-width: 1000px) {
+    #banner img{
+        margin-top: -100px; /*para que la imagen se adapte al tamaño de la ventana superando el rango dado*/
+        /* - corre la img para arriba y + para abajo */
+    }
+    #perros img{
+        margin-top: -30px;
+    }
+    #conejos img{
+        margin-top: -170px;
+    }
+    #periquitos img {
+        margin-top: -10px;
+    }
+    #gatos img {
+        margin-top: -50px;
+    }
+    #peces img {
+        margin-top: 0px;
+    }
+    #reptiles img{
+        margin-top: -10px;
+    }
+    #roedores img {
+        margin-top: -40px;
+    }
+}

@@ -1,0 +1,40 @@
+#conceptos .contenedor{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+#conceptos article {
+    margin: 15px;
+    max-width: 250px;
+    overflow: hidden; /*no supere los margenes sugeridos */
+
+}
+#conceptos img {
+    width: 100%;
+    height: auto;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+@media (min-width:670px){
+    #conceptos{
+        width: 50%;
+    }
+}
+@media (min-width:960px){
+    #conceptos{
+        width: auto;
+    }
+    .contenedor{
+        justify-content: center;
+    }
+}
